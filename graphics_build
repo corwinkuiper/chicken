@@ -1,0 +1,2 @@
+grit gfx/map.png -o bgfx/map -gB4 -gt -mLf -Zl
+#                                      ^-Map ^- Compression
