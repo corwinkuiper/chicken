@@ -127,6 +127,10 @@ int main(void) {
             } else {
                 isFlappingAnimation = 2;
                 chicken.yVelocity += (1 << (SUBPIXELBITS + 4)) / 3;
+                #define chickenTerminalVelocity (1<<(SUBPIXELBITS + 7))
+                if (chicken.yVelocity > ( chickenTerminalVelocity)) {
+                    chicken.yVelocity = chickenTerminalVelocity;
+                }
             }
         }
 
